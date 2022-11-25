@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bkprogviz"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etSEmailAddress"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/etSPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="password"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSEmailAddress" />
+
+    <EditText
+        android:id="@+id/etSConfPassword"
+        android:layout_width="346dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="password"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSPassword"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSSigned"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn"
+        android:text="@string/signed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSConfPassword" />
+
+    <TextView
+        android:id="@+id/tvRedirectLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_horizontal"
+        android:text="@string/already_have_an_account"
+        android:textColor="#18206F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSSigned"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="196dp"
+        android:layout_height="211dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

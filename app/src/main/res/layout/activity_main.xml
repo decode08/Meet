@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bkprogviz"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/conferenceName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/textbox"
+        android:hint="@string/enter_room_name" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/btn"
+        android:onClick="onButtonClick"
+        android:text="@string/join"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

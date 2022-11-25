@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Meet</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="signed">signed</string>
+    <string name="already_have_an_account">already have an account</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account_sign_in">don\'t have an account sign in</string>
+    <string name="join">Join</string>
+    <string name="enter_room_name">Enter room name</string>
+</resources>
